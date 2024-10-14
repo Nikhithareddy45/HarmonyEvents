@@ -1,102 +1,68 @@
+.flex{
+  gap:10px;
 
-.container {
-    height: 100%;
-    width:100%;
+}.login-container{
+  height: 100%;
+  width: 100%;
+  color: var(--second);
 }
-.login-flex {
-    gap: 20px;
-    background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 8px 32px 0 rgba(30, 30, 31, 0.37);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    /* background-color: black; */
-    /* background-color: var(--second); */
-    color:var(--second);
-  }
-  .content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 70vh;
-    padding: 10px 45px;
-  }
-  .content * {
-    margin: 3px 0px;
-  }
-  #title{
-      font-size: 32px;
-      margin:20px 0px;
-  }
-  
-  .name-flex {
-    padding:5px;
-    flex-direction: column;
-  }
-  input {
-    padding: 8px 40px 8px 40px;
-    border:2px solid rgba(67, 67, 67, 0.265);
-    background-color: transparent;
-  }
-  #idforgot {
-    text-align: right;
-    font-size: 12px;
-  }
-  a,button{
-      text-decoration: none;
-    color: var(--second);
-    font-size: inherit;
-  }
-  .login {
-    width: 100%;
-    padding: 8px;
-    font-family: "Reddit Sans", sans-serif;
-    border: none;
-    cursor: pointer;
-    background-color: var(--second);
-    color:black;
-    border-radius: 5px;
-    margin:10px 0px;
-  }
-  #google {
-    height: 17px;
-    margin-right: 8px;
-  }
-  #or{
-      text-align: center;
-      margin:10px;
-  }
-  .media-flex {
-    margin:10px;
-    border-radius: 15px;
-    cursor: pointer;
-    border:2px solid rgba(156, 146, 146, 0.491);
-  }
-  .media-flex:hover {
-    background-color: rgba(128, 128, 128, 0.11);
-    transition: all 0.5s ease;
-  }
-  .media-flex,
-  .sign {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-  }
-  @media only screen and (max-width:1080px) {
-      .bg-image img,.content{
-          width:47vw;
-          height:60vh;
-      }
-  }
-  @media only screen and (max-width:767px) {
-      .bg-image img{
-          display: none;
-      }
-      .content{
-          height: 65vh;
-          width:320px;
-      }
-  }
-  
+.login{
+  flex-direction: column;
+  border:2px solid grey;
+  background-color: rgba(30, 28, 28, 0.484);
+  padding:30px;
+}
+.login h3{
+  margin:10px 0px;
+  font-size: 28px;
+}
+.input-flex{
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap:10px;
+  padding:7px;
+}
+.input-flex input{
+  padding:7px 20px;
+  border: 2px solid rgb(38, 38, 38);
+  background-color: transparent;
+  color: white; 
+}
+.google-flex{
+  border:2px solid grey;
+  padding:7px 10px;
+  width: 95%;
+  border-radius: 10px;
+}
+.google-flex img{
+  width:1rem;
+}
+.google-flex:hover{
+  background-color: #ffffff1b;
+}
+.forgot{
+  width:100%;
+  text-align: right;
+  font-size: 13px;
+}
+#signin{
+  font-size: inherit;
+  width:95%;
+  padding:7px 20px;
+  border-radius: 5px;
+  border:none;
+  background-color: var(--second);
+}
+a{
+  text-decoration:  none;
+  color: white;
+}
+.forgot a:hover{
+  color:var(--second);
+  text-decoration: none;
+
+}
+.signup{
+  margin:10px;
+}
