@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header id="nav-container">
+    <div id="nav-container">
         <nav>
             <div class="navbar flex">
                 <div class="logo-img">  
@@ -19,10 +19,10 @@
                <div class="nav-text flex">
                 <ul class="nav-ul flex">
                   <li class="nav cursor" id="Home"><a href="#"><p class="active nav-tag">Home</p></a></li>
-                  <li class="nav cursor" id="About"><a href="#about"><p class="nav-tag">About</p></a></li>     
-                  <li class="nav cursor" id="Services"><a href="#services"><p class="nav-tag">Services</p></a></li>           
+                  <li class="nav cursor" id="About"><a href="about.html "><p class="nav-tag">About</p></a></li>     
+                  <li class="nav cursor" id="Services"><a href="services.html"><p class="nav-tag">Services</p></a></li>           
                   <!-- <li class="nav cursor" id="Gallery"><a href="gallery.html"><p class="nav-tag">Gallery</p></a></li>           -->
-                  <li class="nav cursor" id="Contact"><a href="#footer"><p class="nav-tag">Contact</p></a></li>
+                  <li class="nav cursor" id="Contact"><a href="contact.html"><p class="nav-tag">Contact</p></a></li>
               </ul>
               <div class="right nav-ul flex">
                   <button type="submit"  id="login" class="submit-btn cursor inherit">Login</button>
@@ -39,21 +39,9 @@
      <!-- <div class="menu flex">
       <ul class="menubar flex">
         <li class="menu-items flex">
-         <a href="#" target="_blank" rel="noopener noreferrer" class="flex ">
-          <img src="src/img/menu/birthday.png" alt="" srcset="">
-          <p>Birthday</p>
-         </a>
-        </li>
-        <li class="menu-items flex">
           <a href="#" target="_blank" rel="noopener noreferrer" class="flex">
            <img src="src/img/menu/marriage.png" alt="" srcset="">
            <p>Marriage</p>
-          </a>
-         </li>
-         <li class="menu-items flex">
-          <a href="#" target="_blank" rel="noopener noreferrer" class="flex">
-           <img src="src/img/menu/surprise.png" alt="" srcset="">
-           <p>Surprise</p>
           </a>
          </li>
          <li class="menu-items flex">
@@ -62,29 +50,53 @@
            <p>Corporate</p>
           </a>
          </li>
-         <li class="menu-items  flex">
-          <a href="#" target="_blank" rel="noopener noreferrer" class="flex">
-           <img src="src/img/menu/festival.png" alt="" srcset="">
-           <p>Occasion</p>
-          </a>
-        </li>
       </ul> 
-      </div> --> 
-  </header>
+      </div>  -->
+    </div>
 
     <div class="main-page">
       <div class="main-img">
         <img class="res-img" src="src/img/Sangeeth/6.jpg" alt="" srcset="">     
       </div>
-      <div class="bg-black flex">
-        <div class="display-text flex">
-          <h1 class="heading center">Creating Memories that Last a Lifetime.</h1>
-        <p class="para center">Welcome to <span class="yellow">Harmony Events</span>, where we specialize in turning your vision into reality. We pride ourselves on our ability to create beautiful things and 
-          unforgettable memories.</p>
-          <button type="button" class="inherit get-started cursor">Get Started</button>
+      <div class="bg-black flex"></div>
+        <div class="flex">
+          <div class="display-text flex">
+            <h1 class="heading center">Creating Memories that Last a Lifetime.</h1>
+            <p class="para center">Welcome to <span class="yellow">Harmony Events</span>, where we specialize in turning your vision into reality. We pride ourselves on our ability to create beautiful things and 
+            unforgettable memories.</p>
+            <button type="button" class="inherit get-started cursor" id="get-started">Get Started</button>
+        </div>
       </div>
-    </div>
-
+    
+  </div>
+    <div class="section" id="services">
+      <div class="head-content">
+        <div class="head flex flex-col">
+          <h1 class="heading center "><span class="yellow ">What</span> We Organize?</h1>
+          <p class="para center" id="tagline">From elegant weddings to professional corporate events, we bring your vision to life with seamless planning and exceptional service. </p>  
+        </div>
+        <div class="content flex">
+          <div class="one desc flex">
+            <!-- <img src="src/img/marriage-photo.jpg" alt="" srcset="" > -->
+            <img src="src/img/marriage-pic.jpg" alt="" srcset="">
+            <p class="yellow sub-text">Destination Wedding</p>
+            <p class="para ">
+              We specialize in creating unforgettable destination weddings at the most stunning locations across the world. 
+              <!-- From romantic beach ceremonies to elegant vineyard receptions, we manage every detail—venues, vendors, travel arrangements, and guest accommodations. --></p>
+            <button type="button" class="inherit get-started cursor" id="wedding">Book Now </button>
+        </div>
+        <div class="two desc flex">
+          <img src="src/img/corporate.avif" alt="" srcset="" >
+          <p class="yellow sub-text">Corporate Events</p>
+          <p class="para ">From business conferences to team-building retreats, we offer comprehensive corporate event planning services. 
+            <!-- Our team ensures flawless execution, whether it’s a small team meeting or a large-scale company event -->
+          </p>
+          <button type="button" class="inherit get-started cursor" id="corporate">Book Now</button>
+        </div>
+        </div>
+      </div>
+     </div>
+     
     <div class="section" id="about">
     <div class="align flex">
       <div class="section-text flex">
@@ -93,8 +105,7 @@
         <p class="para center">At Harmony Events, we pride ourselves on our ability to create beautiful things and unforgettable memories. Our passion for perfection and attention to detail ensure that each event we undertake is executed flawlessly, leaving you with cherished moments to last a lifetime. Trust Harmony Events to make your event truly extraordinary.</p>
       </div>
       <div class="img">
-        <!-- <img src="https://img.freepik.com/free-photo/friends-clinking-glasses-medium-shot_23-2148965362.jpg?ga=GA1.1.125215987.1714933681&semt=ais_hybrid" alt="event-image" srcset=""> -->
-        <img src="https://img.freepik.com/free-photo/front-view-people-celebrating-tamil-new-year_23-2151210796.jpg?ga=GA1.1.125215987.1714933681&semt=ais_hybrid" alt="event-image" srcset="">
+        <img src="src/img/who-we-are.png" alt="event-image" srcset="">
       </div>
     </div>
    </div>
@@ -103,22 +114,22 @@
    <div class="section" id="services">
     <div class="head-content">
       <div class="head">
-        <h1 class="heading center"><span class="yellow ">Why</span><br/> Harmony Events?</h1>
+        <h1 class="heading center"><span class="yellow ">Why</span> Harmony Events?</h1>
         <p class="para center">We believe that every event is unique, just like our clients</p>  
       </div>
       <div class="content flex">
         <div class="one desc flex">
-          <img src="src/img/one.png" alt="" srcset="">
+          <img src="https://media.istockphoto.com/id/635978124/photo/learning-the-ropes-of-his-industry-through-first-hand-experience.jpg?s=612x612&w=0&k=20&c=vWE7YTrg90YG5_kKRzJEt8nzUBwVtpl5_dw9uUSuAjs=" alt="" srcset="">
           <p class="yellow sub-text">Attention to Detail</p>
           <p class="para ">Our dedicated team will meticulously plan and coordinate every aspect of your event, leaving no stone unturned.</p>
       </div>
       <div class="two desc flex">
-        <img src="src/img/three.png" alt="" srcset="">
-        <p class="yellow sub-text">Commitment to Excellence</p>
+        <img src="https://img.freepik.com/free-photo/closeup-view-handshake-two-businessmen-suits-shaking-hands_1163-4891.jpg?ga=GA1.1.1686681737.1728641316&semt=ais_hybrid" alt="" srcset="">
+        <p class="yellow sub-text">Commitment</p>
         <p class="para">At Harmony Events, we guarantee a seamless experience from start to finish, ensuring that your event is executed to perfection.</p>
       </div>
       <div class="three desc flex">
-         <img src="src/img/two.png" alt="" srcset="">
+         <img src="https://img.freepik.com/free-photo/corporate-workers-brainstorming-together_23-2148804568.jpg?ga=GA1.1.1686681737.1728641316&semt=ais_hybrid" alt="" srcset="">
           <p class="yellow sub-text">Personalized Service</p>
           <p class=" para">We believe every event should be as unique as the people behind it. That’s why we offer customized solutions tailored to your vision.</p>
       </div>
@@ -130,7 +141,7 @@
     <div class="section">
       <div class="align flex">
         <div class="img">
-          <img src="src/img/plan.png" alt="event-image" srcset="">
+          <img src="https://img.freepik.com/free-photo/top-view-wedding-planning-resources-arrangement_23-2150279494.jpg?ga=GA1.1.1686681737.1728641316&semt=ais_hybrid" alt="event-image" srcset="">
         </div>
         <div class="section-text flex">
           <h1 class="heading center"><span class="yellow ">Plan</span> your Memories</h1>
@@ -242,8 +253,8 @@
             <p class="address para">Pillar No. 143, 16 Shatters Hyderguda, Attapur, Hyderabad - 500048.</p>
             <p><b>Contact: </b>
             +91 63045 03904
-            <br>
-            +91 6301719103
+            <br/><br/>
+            +91 63017 19103
             </p>
             <p class="email"><b> Email: </b>harmonyeventsteam@gmail.com</p>
         </div>

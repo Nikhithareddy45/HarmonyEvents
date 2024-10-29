@@ -1,15 +1,27 @@
 
 const login = document.querySelector('#login');
 const signup = document.querySelector('#signup');
-const getStarted = document.querySelector('.get-started');
+const getStarted = document.querySelector('#get-started');
+const wedding = document.querySelector('#wedding');
+const corporate = document.querySelector('#corporate');
+const weddingBtn = document.querySelector('.wedding-btn');
 login.addEventListener("click",function(){
     window.location.href = 'login.html'; 
 })
 signup.addEventListener("click",function(){
     window.location.href = 'signup.html'; 
 })
-signup.addEventListener("click",function(){
-    window.location.href = 'services.html'; 
+wedding.addEventListener("click",function(){
+    window.location.href = 'wedding.html'; 
+})
+corporate.addEventListener("click",function(){
+    window.location.href = 'corporate.html'; 
+})
+getStarted.addEventListener("click",function(){
+    window.location.href = 'contact.html'; 
+})
+weddingBtn.addEventListener("click",function(){
+    window.location.href = 'contact.html'; 
 })
 
 document.addEventListener("DOMContentLoaded", function() {
