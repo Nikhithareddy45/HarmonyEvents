@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const login = document.querySelector('#login');
-    const signup = document.querySelector('#signup');
-    const getStarted = document.querySelector('#get-started');
-    const wedding = document.querySelector('#wedding');
-    const corporate = document.querySelector('#corporate');
-    const weddingBtn = document.querySelector('.wedding-btn');
+    let login = document.querySelector('#login');
+    let signup = document.querySelector('#signup');
+    let getStarted = document.querySelector('#get-started');
+    let wedding = document.querySelector('#wedding');
+    let corporate = document.querySelector('#corporate');
+    let weddingBtn = document.querySelector('.wedding-btn');
     
     if (login) {
         login.addEventListener("click", function() {
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    const menu = document.querySelector('.menu');
+    let menu = document.querySelector('.menu');
 
     window.addEventListener('scroll', function() {
         if (window.scrollY > 100) { 
@@ -57,12 +57,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-const faqItems = document.querySelectorAll('.faq-flex');
+let faqItems = document.querySelectorAll('.faq-flex');
 
 faqItems.forEach(faqItem => {
-  const question = faqItem.querySelector('.plus-flex');
-  const answer = faqItem.querySelector('.desp');
-  const plusIcon = faqItem.querySelector('.fa-plus'); 
+  let question = faqItem.querySelector('.plus-flex');
+  let answer = faqItem.querySelector('.desp');
+  let plusIcon = faqItem.querySelector('.fa-plus'); 
 
   faqItem.addEventListener('click', () => {
     answer.classList.toggle('show');
