@@ -9,20 +9,16 @@
 @media screen and (max-width: 520px){
 } */
 :root {
-    --first: #131313f7;
+    --first: #000000;
     --second: rgb(238, 175, 15);
     --third:rgba(240, 248, 255, 0.95);
     --nav:#161616;
-    --font-family: 'font', sans-serif; 
     --contact: #a5a4a4;
 }
-/* @font-face {
-    font-family: 'font';
-    src: url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap') ;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-} */
+@font-face {
+    font-family: myfont;
+    src: url(../../fonts/Baron/Baron\ Neue.otf);
+}
 * {
     margin: 0;
     padding: 0;
@@ -38,8 +34,7 @@ html,body {
 body{
     background-color:black;
     color:var(--third);
-    /* font-family: var(--font-family);   */
-    font-family: "Josefin Sans", sans-serif;
+    font-family: 'Josefin Sans';
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -67,7 +62,11 @@ body{
     padding:10px 0px;
 }
 .logo-img img{
-    height: 65px;
+    height: 55px;
+}
+.logo-img h1{
+    font-family: myfont;
+    padding-bottom: 7px;
 }
 .flex li{
     list-style: none;
@@ -148,6 +147,7 @@ body{
     width: 100%;
     position: relative;
     z-index: -5;
+    object-fit: cover;
 }
 .bg-black{
     position: absolute;
@@ -705,7 +705,7 @@ a:hover{
     width:23%;
     border:2px solid rgba(128, 128, 128, 0.605);
     gap:10px;
-    height:23em;
+    /* height:23em; */
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -1019,4 +1019,20 @@ button{
     margin: auto;
     height:90vh;
     border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 768px){
+    .main1-page{
+        margin-top: 260px;
+        background: linear-gradient(rgba(83, 73, 144, 0.333), rgba(8, 0, 58, 0.322)),
+            url('https://t4.ftcdn.net/jpg/06/58/65/49/240_F_658654902_v0Ql2XqzmRsE5GTvrmUC96yFFmEddfaq.jpg');
+        height: auto;
+    }
+}
+@media only screen and (max-width: 300px){
+    .main1-page{
+        height: 50vh;
+    }
 }
